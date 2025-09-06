@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Heart, Star, Sparkles, Gift, Camera, MessageCircle } from 'lucide-react';
 import BirthdayMagicPage from './BirthdayMagicPage.jsx';
+import arushiImage from '/images/aru1.jpg';
 
 export default function BirthdayWebpage() {
   const [currentMemory, setCurrentMemory] = useState(0);
@@ -136,7 +137,7 @@ export default function BirthdayWebpage() {
             <div className="relative">
               <div className="w-64 h-64 md:w-80 md:h-80 bg-gradient-to-br from-pink-200 to-rose-300 rounded-full flex items-center justify-center shadow-xl">
                 <img 
-                  src="/assets/images/aru1.jpg" // CHANGE THIS TO YOUR PHOTO'S NAME!
+                  src={arushiImage} // CHANGE THIS TO YOUR PHOTO'S NAME!
                   alt="My beautiful girlfriend" 
                   className="w-full h-full object-cover" 
                 />
